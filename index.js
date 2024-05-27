@@ -25,5 +25,13 @@ document.addEventListener("keydown", function(e){
     }else{
         alert("Click the right key")
     }
-    
+     if(e.key ==="ArrowTop"){
+        const newleft =dorger.style.left.replace("px", "");
+        const leftint =parseInt(newleft);
+        if(leftint <=180){
+            dorger.style.left = `${leftint+1}px`
+
+        }
+
+     }
  })
